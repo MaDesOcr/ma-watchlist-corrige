@@ -1,0 +1,27 @@
+:root { font-family: system-ui, sans-serif; color: #1d1b2e; background: #f7f6fb; }
+body { margin: 0; }
+.entete { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: #1d1b2e; color: #fff; }
+.entete nav { display: flex; gap: 1rem; }
+.entete a { color: #cfc9f5; text-decoration: none; }
+.entete a.active { color: #fff; font-weight: 700; }
+main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+.grille { list-style: none; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.carte { background: #fff; border: 1px solid #e4e2ee; border-radius: 12px; padding: 1rem; }
+.carte.vu { opacity: .75; }
+.carte h2 { font-size: 1.05rem; margin: 0 0 .3rem; }
+.carte a { color: inherit; }
+.badge { display: inline-block; background: #ffe9c7; padding: .1rem .5rem; border-radius: 999px; font-size: .85rem; }
+.filtres { display: flex; gap: .5rem 1rem; align-items: center; flex-wrap: wrap; margin: 1rem 0; }
+.stats { display: flex; gap: 1rem; margin: 0; }
+.stats div { background: #fff; border: 1px solid #e4e2ee; border-radius: 10px; padding: .5rem 1rem; }
+.stats dt { font-size: .8rem; color: #6b6880; }
+.stats dd { margin: 0; font-size: 1.4rem; font-weight: 700; }
+form p { display: flex; flex-direction: column; gap: .3rem; max-width: 360px; }
+input, select, button { font: inherit; padding: .45rem .7rem; border-radius: 8px; border: 1px solid #c9c5dc; }
+button { background: #4b2fd6; color: #fff; border: none; cursor: pointer; }
+button.danger { background: #b42318; margin-top: 1rem; }
+.etoiles button { background: none; color: #e8a400; padding: 0 .1rem; font-size: 1.4rem; }
+.etoiles span { color: #e8a400; }
+.erreur { color: #b42318; font-size: .9rem; }
+.notification { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #1d1b2e; color: #fff; padding: .8rem 1.2rem; border-radius: 10px; }
+:focus-visible { outline: 3px solid #4b2fd6; outline-offset: 2px; }
